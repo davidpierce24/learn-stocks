@@ -23,15 +23,15 @@ export default function Home() {
 
           {/* sidebar */}
           <aside className="hidden sm:block w-48 fixed inset-0 top-[5rem] bg-green-400 backdrop-blur z-20 overflow-y-auto overflow-hidden flex pr-5 text-xl font-semibold">
-            <div className="h-full flex flex-col gap-2 items-start text-white px-5 overflow-y-auto bg-black bg-opacity-10 rounded-tr-xl py-5">
-              <div>Stocks</div>
+            <div className="h-full flex flex-col gap-2 items-start text-white px-5 overflow-y-auto bg-green-700 bg-opacity-50 rounded-tr-xl py-5">
+              <div className="">Stocks</div>
               
             </div>
           </aside>
 
           {/* main body */}
           <div className="pl-52 bg-green-400">
-            <div className="bg-green-800 rounded-tl-xl fixed inset-0 top-[5rem] left-0 sm:left-[12rem] backdrop-blur z-20 overflow-y-auto overflow-hidden">
+            <div className="bg-green-700 rounded-tl-xl fixed inset-0 top-[5rem] left-0 sm:left-[12rem] backdrop-blur z-20 overflow-y-auto overflow-hidden">
               <div className="w-full flex flex-col px-5 py-10 gap-10 z-20">
                 <div className="bg-black bg-opacity-20 h-40 w-full rounded-lg"></div>
                 <div className="bg-black bg-opacity-20 h-40 w-full rounded-lg"></div>
