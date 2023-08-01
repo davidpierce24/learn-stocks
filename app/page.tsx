@@ -52,17 +52,96 @@ export default function Home() {
     // </body>
 
 
-    <div className="h-screen w-full bg-gradient-to-tr from-blue-500 via-pink-500 to-red-500">
+    <div className="h-screen w-full bg-gradient-to-tr from-green-400 via-green-700 to-black">
       <div className="h-full w-full bg-white bg-opacity-10 backdrop-blur-xl flex flex-col gap-5">
-        <div className="h-20 w-full bg-black bg-opacity-10">
 
-        </div>
-        <div className="h-full w-full flex gap-5">
-          <div className="h-full w-32 bg-black bg-opacity-10 rounded-tr-xl">
-
+        {/* nav */}
+        <div className="h-20 w-full bg-black bg-opacity-10 outline outline-green-400 p-6 flex items-center font-bold text-white text-2xl">
+          <div className="basis-2/6 flex items-center pl-10">
+            <BsPiggyBank className="w-8 h-8 mr-1" />
+            <span><span className="text-3xl">S</span>to<span className="text-3xl">X</span></span>
           </div>
-          <div className="h-full w-full bg-black bg-opacity-10 rounded-tl-xl">
+          <div className="basis-2/6">
+            <input type="search" className="w-full h-10 bg-white bg-opacity-20 rounded-xl"/>
+          </div>
+          <div className="basis-2/6"></div>
+        </div>
 
+        {/* body */}
+        <div className="h-[calc(100%-6.25rem)] w-full flex gap-5">
+
+          {/* sidebar */}
+          <div className="h-full w-48 bg-black bg-opacity-10 rounded-tr-xl outline outline-green-400 flex flex-col p-4 gap-4 overflow-y-auto">
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+          </div>
+
+          {/* mainbody */}
+          <div className="h-full w-full bg-black bg-opacity-10 rounded-tl-xl outline outline-green-400 flex flex-col p-4 gap-4 overflow-y-auto">
+            {/* <div className="h-40 w-full bg-black rounded-xl"></div>
+            <div className="h-40 w-full bg-black rounded-xl"></div>
+            <div className="h-40 w-full bg-black rounded-xl"></div>
+            <div className="h-40 w-full bg-black rounded-xl"></div>
+            <div className="h-40 w-full bg-black rounded-xl"></div>
+            <div className="h-40 w-full bg-black rounded-xl"></div>
+            <div className="h-40 w-full bg-black rounded-xl"></div>
+            <div className="h-40 w-full bg-black rounded-xl"></div>
+            <div className="h-40 w-full bg-black rounded-xl"></div>
+            <div className="h-40 w-full bg-black rounded-xl"></div> */}
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
           </div>
         </div>
       </div>
