@@ -2,55 +2,6 @@ import { BsPiggyBank } from "react-icons/bs";
 
 export default function Home() {
   return (
-    // entire body
-    // <body className="bg-green-400">
-
-    //   {/* surrounding div */}
-    //   <div>
-
-    //     {/* top nav */}
-    //     <div className="sticky top-0 w-full h-20 bg-green-400 backdrop-blur p-6 flex items-center font-bold text-white text-2xl z-40">
-    //       <div className="basis-2/6 flex items-center">
-    //           <BsPiggyBank className="w-8 h-8 mr-1" />
-    //           <span><span className="text-3xl">S</span>to<span className="text-3xl">X</span></span>
-    //       </div>
-    //         <div className="basis-2/6"></div>
-    //         <div className="basis-2/6"></div>
-    //     </div>
-
-    //     {/* below top nav */}
-    //     <div className="bg-green-400">
-
-    //       {/* sidebar */}
-    //       <aside className="hidden sm:block w-48 fixed inset-0 top-[5rem] bg-green-400 backdrop-blur z-20 overflow-y-auto overflow-hidden flex pr-5 text-xl font-semibold">
-    //         <div className="h-full flex flex-col gap-2 items-start text-white px-5 overflow-y-auto bg-green-700 bg-opacity-50 rounded-tr-xl py-5">
-    //           <div className="">Stocks</div>
-              
-    //         </div>
-    //       </aside>
-
-    //       {/* main body */}
-    //       <div className="pl-52 bg-green-400">
-    //         <div className="bg-green-700 rounded-tl-xl fixed inset-0 top-[5rem] left-0 sm:left-[12rem] backdrop-blur z-20 overflow-y-auto overflow-hidden">
-    //           <div className="w-full flex flex-col px-5 py-10 gap-10 z-20">
-    //             <div className="bg-black bg-opacity-20 h-40 w-full rounded-lg"></div>
-    //             <div className="bg-black bg-opacity-20 h-40 w-full rounded-lg"></div>
-    //             <div className="bg-black bg-opacity-20 h-40 w-full rounded-lg"></div>
-    //             <div className="bg-black bg-opacity-20 h-40 w-full rounded-lg"></div>
-    //             <div className="bg-black bg-opacity-20 h-40 w-full rounded-lg"></div>
-    //             <div className="bg-black bg-opacity-20 h-40 w-full rounded-lg"></div>
-    //             <div className="bg-black bg-opacity-20 h-40 w-full rounded-lg"></div>
-    //             <div className="bg-black bg-opacity-20 h-40 w-full rounded-lg"></div>
-    //             <div className="bg-black bg-opacity-20 h-40 w-full rounded-lg"></div>
-    //             <div className="bg-black bg-opacity-20 h-40 w-full rounded-lg"></div>
-    //           </div>
-              
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </body>
-
 
     <div className="h-screen w-full bg-gradient-to-tr from-green-400 via-green-700 to-black">
       <div className="h-full w-full bg-white bg-opacity-10 backdrop-blur-xl flex flex-col gap-5">
@@ -71,77 +22,30 @@ export default function Home() {
         <div className="h-[calc(100%-6.25rem)] w-full flex gap-5">
 
           {/* sidebar */}
-          <div className="h-full w-48 bg-black bg-opacity-10 rounded-tr-xl outline outline-green-400 flex flex-col p-4 gap-4 overflow-y-auto">
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
+          <div className="h-full w-48 bg-black bg-opacity-10 rounded-tr-xl p-4 outline outline-green-400 ">
+            <div className="h-full flex flex-col py-2 gap-2 overflow-y-auto text-white font-semibold text-xl">
+
+              <p>Welcome</p>
+              <p className="underline">Stocks</p>
+
+            </div>
           </div>
 
           {/* mainbody */}
-          <div className="h-full w-full bg-black bg-opacity-10 rounded-tl-xl outline outline-green-400 flex flex-col p-4 gap-4 overflow-y-auto">
-            {/* <div className="h-40 w-full bg-black rounded-xl"></div>
-            <div className="h-40 w-full bg-black rounded-xl"></div>
-            <div className="h-40 w-full bg-black rounded-xl"></div>
-            <div className="h-40 w-full bg-black rounded-xl"></div>
-            <div className="h-40 w-full bg-black rounded-xl"></div>
-            <div className="h-40 w-full bg-black rounded-xl"></div>
-            <div className="h-40 w-full bg-black rounded-xl"></div>
-            <div className="h-40 w-full bg-black rounded-xl"></div>
-            <div className="h-40 w-full bg-black rounded-xl"></div>
-            <div className="h-40 w-full bg-black rounded-xl"></div> */}
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
+          <div className="h-full w-full bg-black bg-opacity-10 rounded-tl-xl outline outline-green-400 flex flex-col p-10 gap-4 overflow-y-auto text-white">
+
+            {/* title div */}
+            <div className="flex bg-white bg-opacity-10 flex-wrap">
+
+              <div className="flex basis-full justify-between">
+                <span className="text-4xl font-bold" >Stock Title</span>
+                <span className="text-3xl font-bold">320.4 <span className="text-lg">USD</span></span>
+              </div>
+              
+              <p>Ticker Symbol</p>
+
+            </div>
+
           </div>
         </div>
       </div>
