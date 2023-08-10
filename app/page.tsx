@@ -48,7 +48,7 @@ export default function Home() {
               
               <div className="flex justify-between">
                 <span>Ticker Symbol</span>
-                <span className="text-green-400">+40 (+30%) Today</span>
+                <span className="text-green-400">+40 (+7.3%) Today</span>
               </div>
 
               {/* chart */}
@@ -62,25 +62,85 @@ export default function Home() {
               </div>
 
               {/* Stock Summary / Info */}
-              <div className="pt-5">
+              <div className="pt-10">
                 <span className="text-2xl">Summary / Info</span>
-                <div className="grid grid-cols-3 gap-4 pt-2">
-                  <div className="flex justify-between hover:bg-black hover:bg-opacity-10">
-                    <span>Previous Close</span>
-                    <span>126.2</span>
+                <div className="w-full h-20 p-5">
+                  <div className="bg-white bg-opacity-20 rounded-xl p-2 grid sm:grid-cols-1 md:grid-cols-2 gap-5">
+                    {/* <div className="basis-1/2">
+                      <p className="border-b">asdfa</p>
+                      <p>asdf</p>
+                    </div>
+                    <div className="basis-1/2">
+                      
+                    </div> */}
+                    <div className="flex justify-between content-center p-2 border-b">
+                      <span>Previous Close</span>
+                      <span>179</span>
+                    </div>
+                    <div className="flex justify-between content-center p-2 border-b">
+                      <span>Open</span>
+                      <span>180</span>
+                    </div>
+                    <div className="flex justify-between content-center p-2 border-b">
+                      <span>Bid</span>
+                      <span>0.00 x 800</span>
+                    </div>
+                    <div className="flex justify-between content-center p-2 border-b">
+                      <span>Ask</span>
+                      <span>0.00 x 1000</span>
+                    </div>
+                    <div className="flex justify-between content-center p-2 border-b">
+                      <span>Day&apos;s Range</span>
+                      <span>177.01 - 180.93</span>
+                    </div>
+                    <div className="flex justify-between content-center p-2 border-b">
+                      <span>52 Week (Year) Range</span>
+                      <span>124.17 - 198.23</span>
+                    </div>
+                    <div className="flex justify-between content-center p-2 border-b">
+                      <span>Volume</span>
+                      <span>56,570,198</span>
+                    </div>
+                    <div className="flex justify-between content-center p-2 border-b">
+                      <span>Average Volume</span>
+                      <span>57,113,016</span>
+                    </div>
+                    <div className="flex justify-between content-center p-2 border-b">
+                      <span>Market Cap</span>
+                      <span>2.803T</span>
+                    </div>
+                    <div className="flex justify-between content-center p-2 border-b">
+                      <span>Beta (5Y Monthly)</span>
+                      <span>1.29</span>
+                    </div>
+                    <div className="flex justify-between content-center p-2 border-b">
+                      <span>PE Ratio (TTM)</span>
+                      <span>30.25</span>
+                    </div>
+                    <div className="flex justify-between content-center p-2 border-b">
+                      <span>EPS (TTM)</span>
+                      <span>5.89</span>
+                    </div>
+                    <div className="flex justify-between content-center p-2 border-b">
+                      <span>Earnings Date</span>
+                      <span>Oct 25, 2023 - Oct 30, 2023</span>
+                    </div>
+                    <div className="flex justify-between content-center p-2 border-b">
+                      <span>Forward Dividend & Yield</span>
+                      <span>0.96 (0.53%)</span>
+                    </div>
+                    <div className="flex justify-between content-center p-2 border-b">
+                      <span>Ex-Dividend Date</span>
+                      <span>May 12, 2023</span>
+                    </div>
+                    <div className="flex justify-between content-center p-2 border-b">
+                      <span>1y Target Est</span>
+                      <span>182.84</span>
+                    </div>
+                    
+                    
                   </div>
-                  <div className="flex justify-between">
-                    <span>Previous Close</span>
-                    <span>126.2</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Previous Close</span>
-                    <span>126.2</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Previous Close</span>
-                    <span>126.2</span>
-                  </div>
+                  
                 </div>
               </div>
 
