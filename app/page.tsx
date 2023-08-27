@@ -22,7 +22,7 @@ export default function Home() {
         <div className="h-[calc(100%-6.25rem)] w-full flex gap-5">
 
           {/* sidebar */}
-          <div className="h-full w-48 bg-black bg-opacity-10 rounded-tr-xl p-4 outline outline-green-400 ">
+          <div className="hidden md:block h-full w-48 bg-black bg-opacity-10 rounded-tr-xl p-4 outline outline-green-400 ">
             <div className="h-full flex flex-col py-2 gap-2 overflow-y-auto text-white font-semibold text-lg">
 
               <p>Welcome</p>
@@ -36,10 +36,10 @@ export default function Home() {
           </div>
 
           {/* mainbody */}
-          <div className="h-full w-full bg-black bg-opacity-10 rounded-tl-xl outline outline-green-400 flex flex-col p-10 gap-4 overflow-y-auto text-white">
+          <div className="h-full w-full bg-black bg-opacity-10 rounded-tl-xl outline outline-green-400 flex p-10 gap-4 overflow-y-auto text-white">
 
-            {/* title div */}
-            <div className=" bg-white bg-opacity-0 font-semibold">
+            {/* content div*/}
+            <div className="bg-white bg-opacity-0 font-semibold basis-full sm:basis-3/4">
 
               <div className="flex basis-full justify-between">
                 <span className="text-3xl font-bold" >Stock Title</span>
@@ -65,7 +65,7 @@ export default function Home() {
               <div className="pt-10">
                 <span className="text-2xl">Summary / Info</span>
                 <div className="w-full h-20 p-5">
-                  <div className="bg-white bg-opacity-20 rounded-xl p-2 grid sm:grid-cols-1 md:grid-cols-2 gap-5">
+                  <div className="bg-black bg-opacity-10 rounded-xl p-2 grid md:grid-cols-1 lg:grid-cols-2 gap-5">
                     {/* <div className="basis-1/2">
                       <p className="border-b">asdfa</p>
                       <p>asdf</p>
@@ -145,6 +145,15 @@ export default function Home() {
               </div>
 
 
+            </div>
+
+            <div className="basis-0 sm:basis-1/4 p-10 flex flex-col gap-10">
+              <div className="bg-black bg-opacity-20 rounded-lg h-full w-full">
+
+              </div>
+              <div className="bg-black bg-opacity-20 rounded-lg h-full w-full">
+
+              </div>
             </div>
 
           </div>
