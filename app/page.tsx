@@ -22,7 +22,7 @@ export default function Home() {
         <div className="h-[calc(100%-6.25rem)] w-full flex gap-5">
 
           {/* sidebar */}
-          <div className="hidden md:block h-full w-48 bg-black bg-opacity-10 rounded-tr-xl p-4 outline outline-green-400 ">
+          <div className="hidden lg:block h-full w-64 bg-black bg-opacity-10 rounded-tr-xl p-4 outline outline-green-400 ">
             <div className="h-full flex flex-col py-2 gap-2 overflow-y-auto text-white font-semibold text-lg">
 
               <p>Welcome</p>
@@ -39,32 +39,34 @@ export default function Home() {
           <div className="h-full w-full bg-black bg-opacity-10 rounded-tl-xl outline outline-green-400 flex p-10 gap-4 overflow-y-auto text-white">
 
             {/* content div*/}
-            <div className="bg-white bg-opacity-0 font-semibold basis-full sm:basis-3/4">
+            <div className="bg-white bg-opacity-0 font-semibold basis-full lg:basis-3/4 flex flex-col gap-10">
 
-              <div className="flex basis-full justify-between">
-                <span className="text-3xl font-bold" >Stock Title</span>
-                <span className="text-2xl font-bold">320.4 <span className="text-lg">USD</span></span>
-              </div>
-              
-              <div className="flex justify-between">
-                <span>Ticker Symbol</span>
-                <span className="text-green-400">+40 (+7.3%) Today</span>
+              <div>
+                <div className="flex justify-between">
+                  <span className="text-3xl font-bold" >Stock Title</span>
+                  <span className="text-2xl font-bold">320.4 <span className="text-lg">USD</span></span>
+                </div>
+                
+                <div className="flex justify-between">
+                  <span>Ticker Symbol</span>
+                  <span className="text-green-400">+40 (+7.3%) Today</span>
+                </div>
               </div>
 
               {/* chart */}
-              <div className="pt-5">
+              <div className="">
                 <span className="text-2xl">Stock Chart</span>
-                <div className="pt-5 px-32">
-                  <div className="h-72 w-full bg-black bg-opacity-30 rounded-xl">
-
+                <div className="p-5">
+                  <div className="h-72 w-full bg-black bg-opacity-30 rounded-xl flex justify-center items-center">
+                    Stock Chart
                   </div>
                 </div>
               </div>
 
               {/* Stock Summary / Info */}
-              <div className="pt-10">
+              <div className="">
                 <span className="text-2xl">Summary / Info</span>
-                <div className="w-full h-20 p-5">
+                <div className="w-full p-5">
                   <div className="bg-black bg-opacity-10 rounded-xl p-2 grid md:grid-cols-1 lg:grid-cols-2 gap-5">
                     {/* <div className="basis-1/2">
                       <p className="border-b">asdfa</p>
@@ -140,21 +142,83 @@ export default function Home() {
                     
                     
                   </div>
-                  
                 </div>
               </div>
+              {/* End of stock info div */}
+
+              
+              {/* outlook div */}
+              <div className="">
+                <span className="text-2xl">Outlook</span>
+                <div className="p-5">
+
+                  <div className="grid grid-cols-2 gap-5">
+                    <div className="bg-black bg-opacity-20 h-40 rounded-xl flex justify-center items-center">Over / Under Valued</div>
+                    <div className="bg-black bg-opacity-20 h-40 rounded-xl flex justify-center items-center">Bear / Bull</div>
+                    <div className="bg-black bg-opacity-20 h-40 rounded-xl flex justify-center items-center">Recommendation Trends Chart</div>
+                    <div className="bg-black bg-opacity-20 h-40 rounded-xl flex justify-center items-center">Recommendation Rating</div>
+                  </div>
+                </div>
+              </div>
+              {/* end of outlook div */}
+
+
+              {/* Earnings Chart */}
+              <div className="">
+              <span className="text-2xl">Earnings Chart</span>
+                <div className="p-5">
+                  <div className="h-72 w-full bg-black bg-opacity-30 rounded-xl flex justify-center items-center">
+                    Put the Earnings Dot Chart Here
+                  </div>
+                </div>
+              </div>
+              {/* Earnings Chart */}
+
+
+              {/* Financials */}
+              <div className="">
+
+                <span className="text-2xl">Financials</span>
+                <div className="p-5">
+                  <div className="h-72 w-full bg-black bg-opacity-30 rounded-xl flex justify-center items-center">
+                    Put Financials Bar Chart Here
+                  </div>
+
+                  {/* Income Statement */}
+                  <div>
+
+                  </div>
+                  {/* End of Income Statement */}
+
+                  {/* Balance Sheet */}
+                  <div>
+
+                  </div>
+                  {/* End of Balance Sheet */}
+
+                </div>
+
+              </div>
+              {/* Financials */}
+
 
 
             </div>
+            {/* End of content div */}
 
-            <div className="basis-0 sm:basis-1/4 p-10 flex flex-col gap-10">
-              <div className="bg-black bg-opacity-20 rounded-lg h-full w-full">
 
+
+
+            {/* Ad sidebar */}
+            <div className="hidden lg:inline-flex lg:basis-1/4 p-10 flex flex-col gap-10">
+              <div className="bg-black bg-opacity-20 rounded-lg h-full w-full flex justify-center items-center">
+                    Ad Here
               </div>
-              <div className="bg-black bg-opacity-20 rounded-lg h-full w-full">
-
+              <div className="bg-black bg-opacity-20 rounded-lg h-full w-full flex justify-center items-center">
+                    Ad Here
               </div>
             </div>
+            {/* End of Ad sidebar */}
 
           </div>
         </div>
