@@ -39,7 +39,7 @@ export default function Home() {
           <div className="h-full w-full bg-black bg-opacity-10 rounded-tl-xl outline outline-green-400 flex p-10 gap-4 overflow-y-auto text-white">
 
             {/* content div*/}
-            <div className="bg-white bg-opacity-0 font-semibold basis-full lg:basis-3/4 flex flex-col gap-10">
+            <div className="bg-white bg-opacity-0 font-semibold basis-full lg:basis-full flex flex-col gap-10">
 
               <div>
                 <div className="flex justify-between">
@@ -53,11 +53,11 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* chart */}
+              {/*main stock chart */}
               <div className="">
                 <span className="text-2xl">Stock Chart</span>
                 <div className="p-5">
-                  <div className="h-72 w-full bg-black bg-opacity-30 rounded-xl flex justify-center items-center">
+                  <div className="h-72 w-full bg-black bg-opacity-30 hover:bg-opacity-50 hover:shadow-lg rounded-xl flex justify-center items-center">
                     Stock Chart
                   </div>
                 </div>
@@ -75,7 +75,7 @@ export default function Home() {
                     <div className="basis-1/2">
                       
                     </div> */}
-                    <div className="flex justify-between content-center p-2 border-b">
+                    <div className="flex justify-between content-center p-2 border-b hover:ring-1 hover:ring-offset-1 hover:ring-white">
                       <span>Previous Close</span>
                       <span>179</span>
                     </div>
@@ -210,7 +210,7 @@ export default function Home() {
 
 
             {/* Ad sidebar */}
-            <div className="hidden lg:inline-flex lg:basis-1/4 p-10 flex flex-col gap-10">
+            <div className="hidden lg:inline-flex lg:basis-1/4 max-w-sm p-10 flex flex-col gap-10">
               <div className="bg-black bg-opacity-20 rounded-lg h-full w-full flex justify-center items-center">
                     Ad Here
               </div>
