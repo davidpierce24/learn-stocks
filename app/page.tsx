@@ -36,7 +36,7 @@ export default function Home() {
           </div>
 
           {/* mainbody */}
-          <div className="h-full w-full bg-black bg-opacity-10 rounded-tl-xl outline outline-green-400 flex p-10 gap-4 overflow-y-auto text-white">
+          <div className="h-full w-full bg-black bg-opacity-10 rounded-tl-xl outline outline-green-400 flex p-1 lg:p-10 gap-4 overflow-y-auto text-white">
 
             {/* content div*/}
             <div className="bg-white bg-opacity-0 font-semibold basis-full lg:basis-full flex flex-col gap-10">
@@ -185,16 +185,64 @@ export default function Home() {
                   </div>
 
                   {/* Income Statement */}
-                  <div>
-
+                  <div className="pt-5 w-full">
+                    <p className="text-lg underline mb-2">Income Statement</p>
+                    <div className="bg-black bg-opacity-10 rounded-xl p-2 flex flex-col text-md">
+                      <div className="flex border-b font-bold py-2">
+                        <div className="basis-1/3 text-gray-900">Breakdown</div>
+                        <div className="basis-1/3 flex justify-center text-gray-900">TTM</div>
+                        <div className="basis-1/3 flex justify-center text-gray-900">Y/Y</div>
+                      </div>
+                      <FinacialsLine title={"Revenue"} value={"$81.80 B"} change={"-1.40%"} good={false} />
+                      <FinacialsLine title={"Operating Expense"} value={"$13.42B"} change={"+4.73%"} good={true} />
+                      <FinacialsLine title={"Net Income"} value={"$19.88 B"} change={"+2.26%"} good={true} />
+                      <FinacialsLine title={"Net Profit Margin"} value={"24.31"} change={"+3.71%"} good={true} />
+                      <FinacialsLine title={"Earnings Per Share (EPS)"} value={"1.26"} change={"+5.00%"} good={true} />
+                      <FinacialsLine title={"EBITDA"} value={"$26.05 B"} change={"+0.65%"} good={true} />
+                      <FinacialsLine title={"Effective Tax Rate"} value={"12.55%"} change={"--------"} good={undefined} />
+                    </div>
                   </div>
                   {/* End of Income Statement */}
 
                   {/* Balance Sheet */}
-                  <div>
-
+                  <div className="pt-5 w-full">
+                    <p className="text-lg underline mb-2">Balance Sheet</p>
+                    <div className="bg-black bg-opacity-10 rounded-xl p-2 flex flex-col text-md">
+                      <div className="flex border-b font-bold py-2">
+                        <div className="basis-1/3 text-gray-900">Breakdown</div>
+                        <div className="basis-1/3 flex justify-center text-gray-900">TTM</div>
+                        <div className="basis-1/3 flex justify-center text-gray-900">Y/Y</div>
+                      </div>
+                      <FinacialsLine title={"Cash & Short-Term Investments"} value={"$62.48 B"} change={"+29.55%"} good={true} />
+                      <FinacialsLine title={"Total Assets"} value={"$335.04 B"} change={"-0.38%"} good={false} />
+                      <FinacialsLine title={"Total Liabilities"} value={"$274.76 B"} change={"-1.24%"} good={false} />
+                      <FinacialsLine title={"Total Equity"} value={"$60.27 B"} change={"-------"} good={undefined} />
+                      <FinacialsLine title={"Shares Outstanding"} value={"15.63 B"} change={"-------"} good={undefined} />
+                      <FinacialsLine title={"Price To Book"} value={"$48.80 B"} change={"-------"} good={undefined} />
+                      <FinacialsLine title={"Return On Assets"} value={"17.23%"} change={"--------"} good={undefined} />
+                      <FinacialsLine title={"Return On Capital"} value={"33.69%"} change={"--------"} good={undefined} />
+                    </div>
                   </div>
                   {/* End of Balance Sheet */}
+
+                  {/* Cash Flow */}
+                  <div className="pt-5 w-full">
+                    <p className="text-lg underline mb-2">Cash Flow</p>
+                    <div className="bg-black bg-opacity-10 rounded-xl p-2 flex flex-col text-md">
+                      <div className="flex border-b font-bold py-2">
+                        <div className="basis-1/3 text-gray-900">Breakdown</div>
+                        <div className="basis-1/3 flex justify-center text-gray-900">TTM</div>
+                        <div className="basis-1/3 flex justify-center text-gray-900">Y/Y</div>
+                      </div>
+                      <FinacialsLine title={"Net Income"} value={"$19.88 B"} change={"+2.26%"} good={true} />
+                      <FinacialsLine title={"Cash From Operations"} value={"$26.38 B"} change={"+15.24%"} good={true} />
+                      <FinacialsLine title={"Cash From Investing"} value={"$437.00 M"} change={"-89.68%"} good={false} />
+                      <FinacialsLine title={"Cash From Financing"} value={"$-24.05 B"} change={"+12.38%"} good={true} />
+                      <FinacialsLine title={"Net Change in Cash"} value={"$2.77 B"} change={"+968.03%"} good={true} />
+                      <FinacialsLine title={"Free Cash Flow"} value={"$20.44 B"} change={"+50.77"} good={true} />
+                    </div>
+                  </div>
+                  {/* End of Cash Flow */}
 
                 </div>
 
@@ -226,3 +274,19 @@ export default function Home() {
     </div>
   )
 }
+
+
+
+// finacials line component
+const FinacialsLine = ({title, value, change, good}: {title:string, value: string, change: string, good?:boolean}) => (
+    <div className="flex border-b py-2">
+      <div className="basis-1/3">{title}</div>
+      <div className="basis-1/3 flex justify-center items-center">{value}</div>
+      <div className="basis-1/3 flex justify-center items-center">
+        <div className={`${good == undefined ? "bg-gray-600" : good ? "bg-green-500 ": "bg-red-500"} rounded-xl px-5  : `}>
+          {change}
+        </div>
+      </div>
+    </div>
+)
+// financials line component
